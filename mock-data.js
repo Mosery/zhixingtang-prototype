@@ -168,25 +168,130 @@ window.MOCK = {
     </div>`,
 
   read: `
-    <div class="quick-grid" style="display:flex;flex-wrap:wrap;justify-content:space-between;margin-bottom:8px">
-      <div class="quick-card module-card" style="width:calc(50% - 5px);padding:12px 8px;margin-bottom:6px"><div style="width:32px;height:32px;border-radius:50%;background:#4a90e2;color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto;font-size:16px">📖</div><div style="font-size:12px;font-weight:600;margin-top:6px">读书会</div><div style="font-size:10px;color:#999;margin-top:2px">共读打卡·录音朗读</div></div>
-      <div class="quick-card module-card" style="width:calc(50% - 5px);padding:12px 8px;margin-bottom:6px"><div style="width:32px;height:32px;border-radius:50%;background:#2d5a3d;color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto;font-size:16px">💬</div><div style="font-size:12px;font-weight:600;margin-top:6px">分享圈</div><div style="font-size:10px;color:#999;margin-top:2px">心得交流·共同成长</div></div>
-      <div class="quick-card entry-card" data-goto="audio" style="width:calc(50% - 5px);padding:12px 8px;margin-bottom:6px"><div style="width:32px;height:32px;border-radius:10px;background:#4a90e2;color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto;font-size:14px">🎙</div><div style="font-size:12px;font-weight:600;margin-top:6px">录音库</div><div style="font-size:10px;color:#999;margin-top:2px">我的录音</div></div>
-      <div class="quick-card entry-card" data-goto="plaza" style="width:calc(50% - 5px);padding:12px 8px;margin-bottom:6px"><div style="width:32px;height:32px;border-radius:10px;background:#c9a227;color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto;font-size:14px">⭐</div><div style="font-size:12px;font-weight:600;margin-top:6px">精选广场</div><div style="font-size:10px;color:#999;margin-top:2px">优质内容精选</div></div>
-    </div>
-    <div class="card section-card">
-      <div class="section-title" style="margin-bottom:10px">今日共读</div>
-      <div class="list-item" style="padding:8px 0;border:none">
-        <div class="list-cover" style="background:#8b4513;width:48px;height:60px">活着</div>
-        <div><div class="list-title">《活着》</div><div class="list-meta">第3章 · 知行堂共读营</div></div>
+    <div class="read-page">
+      <div class="read-quick-grid">
+        <div class="read-quick-card club">
+          <div class="read-quick-icon club">📖</div>
+          <div class="read-quick-title">读书会</div>
+          <div class="read-quick-desc">共读打卡 · 录音朗读</div>
+        </div>
+        <div class="read-quick-card share">
+          <div class="read-quick-icon share">↗</div>
+          <div class="read-quick-title">分享圈</div>
+          <div class="read-quick-desc">心得交流 · 共同成长</div>
+        </div>
+        <div class="read-quick-card audio">
+          <div class="read-quick-icon audio">🎙</div>
+          <div class="read-quick-title">录音库</div>
+          <div class="read-quick-desc">我的录音</div>
+        </div>
+        <div class="read-quick-card plaza">
+          <div class="read-quick-icon plaza">⭐</div>
+          <div class="read-quick-title">精选广场</div>
+          <div class="read-quick-desc">优质内容精选</div>
+        </div>
       </div>
-    </div>
-    <div class="card">
-      <div class="section-head"><span class="section-title">🏆 徽章墙</span></div>
-      <div class="scroll-x">
-        <div style="text-align:center;min-width:56px"><div style="width:44px;height:44px;border-radius:50%;background:#eef6f0;margin:0 auto;display:flex;align-items:center;justify-content:center">🏅</div><div style="font-size:10px;margin-top:4px">阅读新星</div></div>
-        <div style="text-align:center;min-width:56px"><div style="width:44px;height:44px;border-radius:50%;background:#eef6f0;margin:0 auto;display:flex;align-items:center;justify-content:center">📖</div><div style="font-size:10px;margin-top:4px">读书达人</div></div>
-        <div style="text-align:center;min-width:56px"><div style="width:44px;height:44px;border-radius:50%;background:#eee;margin:0 auto;display:flex;align-items:center;justify-content:center">🔒</div><div style="font-size:10px;margin-top:4px;color:#999">未解锁</div></div>
+
+      <div class="read-section-card">
+        <div class="read-section-title">今日共读</div>
+        <div class="read-book-item">
+          <div class="read-book-cover" style="background:#eef5fd">活法</div>
+          <div class="read-book-info">
+            <div class="read-book-title">《活法》</div>
+            <div class="read-book-chapter">第一章第11节：倾听工作现场的"神灵之声"</div>
+            <div class="read-book-meta">合肥新班预备小组</div>
+          </div>
+          <span class="read-book-arrow">›</span>
+        </div>
+        <div class="read-book-item">
+          <div class="read-book-cover" style="background:#eef6f0">活着</div>
+          <div class="read-book-info">
+            <div class="read-book-title">《活着》</div>
+            <div class="read-book-chapter">第一章 少年福贵</div>
+            <div class="read-book-meta">知行堂共读营</div>
+          </div>
+          <span class="read-book-arrow">›</span>
+        </div>
+      </div>
+
+      <div class="read-growth">
+        <div class="read-growth-section">
+          <div class="read-section-head">
+            <span class="read-section-icon">🏆</span>
+            <span class="read-section-title">徽章墙</span>
+          </div>
+          <div class="read-badge-scroll">
+            <div class="read-badge-item">
+              <div class="read-badge-circle gold">🏅</div>
+              <div class="read-badge-name">阅读新星</div>
+            </div>
+            <div class="read-badge-item">
+              <div class="read-badge-circle green">📖</div>
+              <div class="read-badge-name">读书达人</div>
+            </div>
+            <div class="read-badge-item">
+              <div class="read-badge-circle teal">✍️</div>
+              <div class="read-badge-name">创作能手</div>
+            </div>
+            <div class="read-badge-item">
+              <div class="read-badge-circle locked">🔒</div>
+              <div class="read-badge-name">未解锁</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="read-growth-section">
+          <div class="read-section-head">
+            <span class="read-section-icon">📈</span>
+            <span class="read-section-title">等级路径</span>
+          </div>
+          <div class="read-level-path">
+            <div class="read-level-node current">12</div>
+            <div class="read-level-track"><div class="read-level-fill" style="width:65%"></div></div>
+            <div class="read-level-node next">13</div>
+            <span class="read-level-next-label">Lv.13</span>
+          </div>
+        </div>
+
+        <div class="read-growth-section">
+          <div class="read-section-head">
+            <span class="read-section-icon">🗺️</span>
+            <span class="read-section-title">成长路径</span>
+          </div>
+          <div class="read-path-card done">
+            <div class="read-path-top">
+              <div class="read-path-icon done">📚</div>
+              <div class="read-path-info">
+                <div class="read-path-title">阅读入门之路</div>
+                <div class="read-path-desc">5个节点 · 适合初学者</div>
+              </div>
+            </div>
+            <div class="read-path-bar"><div class="read-path-bar-fill"></div></div>
+            <div class="read-path-footer"><span>已完成</span></div>
+          </div>
+          <div class="read-path-card active">
+            <div class="read-path-top">
+              <div class="read-path-icon active">🚀</div>
+              <div class="read-path-info">
+                <div class="read-path-title">行动践行之路</div>
+                <div class="read-path-desc">5个节点 · 参与线下活动</div>
+              </div>
+            </div>
+            <div class="read-path-bar"><div class="read-path-bar-fill"></div></div>
+            <div class="read-path-footer"><span>2/5 完成</span><span class="read-path-footer-right">奖励: 200积分</span></div>
+          </div>
+          <div class="read-path-card locked">
+            <div class="read-path-top">
+              <div class="read-path-icon locked">🔒</div>
+              <div class="read-path-info">
+                <div class="read-path-title">创作大师之路</div>
+                <div class="read-path-desc">需要 Lv.20 解锁</div>
+              </div>
+            </div>
+            <div class="read-path-bar"><div class="read-path-bar-fill"></div></div>
+            <div class="read-path-footer"><span>未解锁</span></div>
+          </div>
+        </div>
       </div>
     </div>`,
 
@@ -863,11 +968,11 @@ window.NAV_RULES = {
     { sel: '.card:last-child > div:not(.section-head)', to: 'share' },
   ],
   read: [
-    { sel: '.quick-grid .module-card:nth-child(1)', to: 'club-list' },
-    { sel: '.quick-grid .module-card:nth-child(2)', to: 'share' },
-    { sel: '.quick-grid .entry-card[data-goto="audio"]', to: 'audio' },
-    { sel: '.quick-grid .entry-card[data-goto="plaza"]', to: 'plaza' },
-    { sel: '.section-card .list-item', to: 'book-detail' },
+    { sel: '.read-quick-card.club', to: 'club-list' },
+    { sel: '.read-quick-card.share', to: 'share' },
+    { sel: '.read-quick-card.audio', to: 'audio' },
+    { sel: '.read-quick-card.plaza', to: 'plaza' },
+    { sel: '.read-book-item', to: 'book-read' },
   ],
   'practice-center': [
     { sel: '.practice-module-card:first-child', to: 'practice-activities' },
